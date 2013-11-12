@@ -2,16 +2,18 @@
 <html>
 <head>
 	<title>Video Game Quiz</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="main.css"/>
 	<meta charset="UTF-8">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="application.js"></script>
+	<script type="text/javascript" src="application2.js"></script>
 </head>
 <body>
+<div class="darken"></div>
 	<section id="intro">
 		<div class="center">
-			<h1>Supporting Video Game Charactor Quiz</h1>
+			<h1>Supporting Video Game Character Quiz</h1>
 			<button id="start">Play Game</button>
 		</div>
 	</section>
@@ -25,7 +27,7 @@
 	</section>
 	<section id="choices">
 		<header>
-			<h1>Supporting Video Game Charactor Quiz</h1>
+			<h1>Supporting Video Game Character Quiz</h1>
 			<h2>Question <span>1</span> of 8</h2>
 		</header>
 		<div class="left-col">
@@ -36,7 +38,7 @@
 		</div>
 	
 		<div class="right-col">
-			<h2>Select Charactor Name</h2>
+			<h2>Select Character Name</h2>
 			<ul>
 			
 			</ul>
@@ -44,10 +46,25 @@
 		<img src="images/daisy.png"/>
 	</section>
 	<section id="answers">
-		<button class="answer"><span id='vg'>Video Game</span></button>
-		<button class="answer"><span id='cn'>Charactor Name</span></button>
+		<h2>Your Answers</h2>
+		<div class="answer"><span id='vg'>Video Game</span></div>
+		<div class="answer"><span id='cn'>Character Name</span></div>
 		<br>
 		<button class="green" id="submit">Submit</button>
 	</section>
+
+    <section id="help-box" class="help">
+        <div class="outline"></div>
+        <div class="help-text">
+            <h3>Tips</h3>
+            <p>Select the video game you believe this character is from.</p>
+            <button id="next-tip">Next</button>
+        </div>
+    </section>
+    
+    <section id="ending">
+    
+    </section>
+    
 
 </body>

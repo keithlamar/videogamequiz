@@ -1,5 +1,5 @@
-question1 = {}
-	question1.pic = "images/daisy.png"
+question1 = {};
+	question1.pic = "images/daisy.png";
 	question1.vg = ["Super Mario Bros Series",
 		"Sonic the Hedgehog",
 		"Donkey Kong Contry",
@@ -15,7 +15,7 @@ question1 = {}
 	question1.desc = "Princess Daisy is a fictional character in the Mario series of video games, where she is the princess of the fictional region of Sarasaland. She first appeared in Super Mario Land as the game's damsel in distress, a role usually played by Princess Peach. Since her appearance in Mario Tennis, she has become a staple playable character in the Mario spin-off games, in which she is often paired up with Peach. It is often speculated that she is Luigi's love interest. Her official description for Mario Party 4 states that Luigi has a crush on her, but Waluigi does too, which may cause trouble.";
 
 question2 = {}
-	question2.pic = "images/tingle.png"
+    question2.pic = "images/tingle.png"
 	question2.vg = ["Crash Bandicoot: The Wrath of Cortex",
 		"Legend fo Zelda: Majora's Mask",
 		"Banjo-Kazooie: Nuts & Bolts",
@@ -69,12 +69,12 @@ $(document).ready(function(){
 		for(var i = 0; i < questionVG.length; i++){
 			$('.left-col')
 			.find('ul')
-			.prepend('<li><button class="choice">' + questionVG[i] + '</button></li>')		
+			.prepend('<li><button class="choice CN">' + questionVG[i] + '</button></li>')		
 		};
 		for(var i = 0; i < questionCN.length; i++){
 			$('.right-col')
 			.find('ul')
-			.prepend('<li><button class="choice">' + questionCN[i] + '</button></li>')		
+			.prepend('<li><button class="choice VG">' + questionCN[i] + '</button></li>')		
 		};
 	};
 
