@@ -61,8 +61,8 @@ qManager = {};
 		"Pey'j",
 		"Big Al",
 		"Dr. Knarf"];
-	   qManager.question4.correctvg = qManager.question4.vg[4];
-	   qManager.question4.correctcn = qManager.question4.cn[2];
+	   qManager.question4.correctvg = qManager.question4.vg[3];
+	   qManager.question4.correctcn = qManager.question4.cn[3];
 	   qManager.question4.desc = "A recurring character. He originally supplied Clank with the Heli-Pack in Ratchet & Clank. Big Al is chosen for the Q-Force in Ratchet & Clank: Up Your Arsenal for his mastery of electronics. He often baffles Ratchet with his techno-speak and has to get Clank to \"translate\" for him since Clank also speaks \"Nerd\". He is the stereotypical computer geek with interests in electronics and all things Qwark. He has two siblings, Bob and Ed(wina), who, like him, own \"RoboShacks\". ";
 
 	qManager.question5 = {};
