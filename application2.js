@@ -106,14 +106,12 @@ qManager = {};
 		}
     qManager.showQuestion = function(){
 		//remember to define var in function, when var will dynamically change
+         
 		var questionVG = eval("qManager.question" + qManager.currentNum + ".vg")
 		var questionCN = eval("qManager.question" + qManager.currentNum + ".cn")
 		var questionPic = eval("qManager.question" + qManager.currentNum + ".pic")
-        if(qManager.currentNum == 6){
-            $('#ending').show();
-            
-        }
-        else{
+       
+        
             $('#choices').find('img').attr("src", questionPic);
             $('#choices').find('span').text(qManager.currentNum);
             for(var i = 0; i < questionVG.length; i++){
@@ -126,7 +124,7 @@ qManager = {};
                 .find('ul')
                 .prepend('<li><button class="choice VG">' + questionCN[i] + '</button></li>')		
             };
-        }
+        
 	};
     qManager.removeQuestion = function (){
 		$('.left-col').find('li').remove();
@@ -196,5 +194,9 @@ $(document).ready(function(){
 	});
 	$('#next').on('click', function(){
 		$(this).parent().parent().fadeOut(1000);
+        if(qManager.currentNum == 6){
+            $('#ending').show();
+            
+        }
 	});
 });
