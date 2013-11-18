@@ -7,16 +7,20 @@
 	<meta charset="UTF-8">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="application2.js"></script>
+	<script type="text/javascript" src="scripts/questions.js"></script>
+	<script type="text/javascript" src="scripts/application.js"></script>
 </head>
 <body>
-<div class="darken"></div>
+
+<section id="ending"></section>
 	<section id="intro">
 		<div class="center">
 			<h1>Supporting Video Game Character Quiz</h1>
 			<button id="start">Play Game</button>
 		</div>
-	</section>
+</section>
+<section class="play-area">
+	<div class="darken"></div>
 	<section id="answer-screen">
 		<div class="center">
 			<h1>Correct!</h1>
@@ -28,22 +32,22 @@
 	<section id="choices">
 		<header>
 			<h1>Supporting Video Game Character Quiz</h1>
-			<h2>Question <span>1</span> of 5</h2>
+			<h2>Question <span class="cur_quest_num">1</span> of <span class="total_quest_count">5</span></h2>
 		</header>
-		<div class="left-col">
+		<section class="left-col">
 			<h2>Select Video Game</h2>
 			<ul>
 				
 			</ul>
-		</div>
-	
-		<div class="right-col">
+		</section>
+		<img src="images/daisy.png"></img>
+		<section class="right-col">
 			<h2>Select Character Name</h2>
 			<ul>
 			
 			</ul>
-		</div>
-		<img src="images/daisy.png"/>
+		</section>
+		
 	</section>
 	<section id="answers">
 		<h2>Your Answers</h2>
@@ -61,10 +65,5 @@
             <button id="next-tip">Next</button>
         </div>
     </section>
-    
-    <section id="ending">
-    
-    </section>
-    
-
+</section>
 </body>
